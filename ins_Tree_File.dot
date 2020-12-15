@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Agency_Code <= 0.5\ngini = 0.422\nsamples = 2100\nvalue = [1464, 636]\nclass = No"] ;
+1 [label="Sales <= 15.5\ngini = 0.485\nsamples = 650\nvalue = [269, 381]\nclass = Yes"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Commision <= 3.565\ngini = 0.257\nsamples = 66\nvalue = [56, 10]\nclass = No"] ;
+1 -> 2 ;
+3 [label="gini = 0.375\nsamples = 36\nvalue = [27, 9]\nclass = No"] ;
+2 -> 3 ;
+4 [label="gini = 0.064\nsamples = 30\nvalue = [29, 1]\nclass = No"] ;
+2 -> 4 ;
+5 [label="Sales <= 72.25\ngini = 0.463\nsamples = 584\nvalue = [213, 371]\nclass = Yes"] ;
+1 -> 5 ;
+6 [label="gini = 0.494\nsamples = 355\nvalue = [158, 197]\nclass = Yes"] ;
+5 -> 6 ;
+7 [label="gini = 0.365\nsamples = 229\nvalue = [55, 174]\nclass = Yes"] ;
+5 -> 7 ;
+8 [label="Sales <= 33.5\ngini = 0.29\nsamples = 1450\nvalue = [1195, 255]\nclass = No"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Sales <= 11.5\ngini = 0.18\nsamples = 830\nvalue = [747, 83]\nclass = No"] ;
+8 -> 9 ;
+10 [label="gini = 0.043\nsamples = 181\nvalue = [177, 4]\nclass = No"] ;
+9 -> 10 ;
+11 [label="gini = 0.214\nsamples = 649\nvalue = [570, 79]\nclass = No"] ;
+9 -> 11 ;
+12 [label="Product Name <= 2.5\ngini = 0.401\nsamples = 620\nvalue = [448, 172]\nclass = No"] ;
+8 -> 12 ;
+13 [label="gini = 0.375\nsamples = 583\nvalue = [437, 146]\nclass = No"] ;
+12 -> 13 ;
+14 [label="gini = 0.418\nsamples = 37\nvalue = [11, 26]\nclass = Yes"] ;
+12 -> 14 ;
+}
